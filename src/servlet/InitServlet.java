@@ -9,7 +9,7 @@ import java.io.IOException;
 public class InitServlet extends javax.servlet.http.HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
-        response.setStatus(response.SC_MOVED_TEMPORARILY);
+        response.setStatus(response.SC_MOVED_PERMANENTLY);
         response.setHeader("Location", "login.jsp");
     }
 }
